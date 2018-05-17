@@ -47,4 +47,6 @@ public class Creep : MonoBehaviour {
 
 		this.transform.position = new Vector3 (newPos.x, 100.07f, newPos.z);
 	}
+
+
 }

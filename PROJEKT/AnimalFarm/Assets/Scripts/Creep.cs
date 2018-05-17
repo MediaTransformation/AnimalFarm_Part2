@@ -7,15 +7,18 @@ public class Follow : MonoBehaviour {
 	public GameObject Player;
 	public float speed = 1.0f;
 	public float MinimumDistance = 5.5f;
+    public float distanceJump = 10.5f;
 
 	void Start () {
-		Player = GameObject.Find("FirstPersonCharacter");
+		Player = GameObject.Find("Player");
 	}
 
 	void Update () {
-		doTheCreepyFollow ();
-		doTheCreepyTurn ();
-		/*
+		
+		//doTheCreepyTurn ();
+        //doTheCreepyFollow();
+
+        /*
 		float interpolation = speed * Time.deltaTime;
 		Vector3 position = this.transform.position;
 		var MinimumDistance = 3.5f;
@@ -26,7 +29,10 @@ public class Follow : MonoBehaviour {
 		Direction.y = -11.29767f;
 		this.transform.position = objectToFollow.transform.position + Direction * MinimumDistance;
 		*/
-	}
+
+
+
+    }
 
 	void doTheCreepyTurn(){
 		this.transform.LookAt (Player.transform);
@@ -47,4 +53,10 @@ public class Follow : MonoBehaviour {
 
 		this.transform.position = new Vector3 (newPos.x, 100.07f, newPos.z);
 	}
+
+    void doTheJumpAction()
+    {
+        Vector3 newPos = (this.transform.position - Player.transform.position).normalized + Player.transform.position;
+        this.transform.position = new Vector3(newPos.x, 100.07f, newPos.z);
+    }
 }
