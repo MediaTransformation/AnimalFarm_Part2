@@ -19,9 +19,14 @@ MonoBehaviour:
   playRangeEnabled: 0
   timeAreaPlayRange: {x: 3.4028235e+38, y: 3.4028235e+38}
   windowTime: 0
+  verticalScroll: 0
   m_Keys:
   - {fileID: 114812414751503298, guid: d5dceda0243974c459c585d11da20c77, type: 2}
+  - {fileID: 114660799732736184, guid: d5dceda0243974c459c585d11da20c77, type: 2}
   m_Vals:
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
   - collapsed: 0
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100

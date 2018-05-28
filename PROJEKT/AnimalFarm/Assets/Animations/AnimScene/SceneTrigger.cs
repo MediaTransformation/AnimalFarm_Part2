@@ -7,20 +7,20 @@ using UnityEngine.Timeline;
 public class SceneTrigger : MonoBehaviour {
 
     public PlayableDirector director;
-    public GameObject obj, player, timeline, Flasche;
+    public GameObject obj, player, timeline, Flasche, hase;
     private bool looking;
     public static bool boxerGone;
+    public static bool drop;
     public float minDistance = 10.0f;
     private float distance;
 
     public AudioClip search;
-    public AudioSource audio;
 
     // Use this for initialization
     void Start () {
         looking = false;
         boxerGone = false;
-        audio = GetComponent<AudioSource>();
+        drop = false;
     }
 	
 	// Update is called once per frame
@@ -39,22 +39,21 @@ public class SceneTrigger : MonoBehaviour {
                         //Schwatzwutz noch Dazu
                         //Boxer "Danke"
 
-                        
-
                         Flasche.SetActive(false);
+                        drop = true;
 
-                        director = timeline.GetComponent<PlayableDirector>();
-                        
-                        if(director != null)
-                        {
-                            director.Play();
-                            boxerGone = true;
-                        }
                     } else {
-                        audio.PlayOneShot(search, 0.7F);
+                        GetComponent<AudioSource>().PlayOneShot(search, 0.7F);
                     }
                 }
             }
+        }
+
+        if (ColliderEnter.colliderReady == 3)
+        {
+            director = timeline.GetComponent<PlayableDirector>();
+            director.Play();
+            boxerGone = true;
         }
     }
 

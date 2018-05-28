@@ -36,5 +36,6 @@ public class BunnyController : MonoBehaviour
         {
             b_jump.enabled = true;
         }
+
     }
 }
