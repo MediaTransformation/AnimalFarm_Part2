@@ -11,13 +11,11 @@ public class ColliderEnter : MonoBehaviour {
         if (collider.gameObject.tag == "Enter")
         {
             colliderReady = 1;
-            print("Enter");
 
         }
         else if (collider.gameObject.tag == "Exit")
         {
             colliderReady = 2;
-            print("Exit");
         }
         else if (SceneTrigger.drop == true)
         {
@@ -25,7 +23,6 @@ public class ColliderEnter : MonoBehaviour {
             if (collider.gameObject.tag == "SceneCollider")
             {
                 colliderReady = 3;
-                print("3");
             }
         }
     }

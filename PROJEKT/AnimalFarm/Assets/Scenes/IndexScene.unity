@@ -14353,7 +14353,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: c6451100575ecb243b2ec51d0fb8b0ea, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -14403,7 +14403,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b625cab023438a6459c6bb7a9acbcdd7, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -22077,7 +22077,6 @@ GameObject:
   - component: {fileID: 583350465}
   - component: {fileID: 583350460}
   - component: {fileID: 583350467}
-  - component: {fileID: 583350466}
   - component: {fileID: 583350468}
   - component: {fileID: 583350469}
   - component: {fileID: 583350470}
@@ -22194,20 +22193,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 307643eb8a1854d45bb21193e8881982, type: 3}
---- !u!114 &583350466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 583350459}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3ad6e2d93c36bc40bda4b17cf3eacdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bunny: {fileID: 0}
-  b_jump: {fileID: 0}
-  jump: 0
 --- !u!114 &583350467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30495,13 +30480,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 85ae26ed4ae3bb3478aecd0c1f64c3a1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.092
+  m_Volume: 0.039
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 52
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -30716,13 +30701,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1ebdf831fbb4924b95525679113bf6b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.081
+  m_Volume: 0.063
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 42
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -33967,7 +33952,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 28ed1d5baf94e6f44bb59018f112eab4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.051
   m_Pitch: 1
@@ -40043,7 +40028,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7732de36267bb3c44a9957599b5d90ed, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
