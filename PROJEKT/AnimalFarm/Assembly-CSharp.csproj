@@ -168,6 +168,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrVRHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+    <Compile Include="Assets\NightDaySwitch.cs" />
     <Compile Include="Assets\Scripts\ColliderEnter.cs" />
     <Compile Include="Assets\Scripts\Creep.cs" />
     <Compile Include="Assets\Scripts\DoorClick.cs" />
@@ -198,11 +199,11 @@
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlay.shader" />
     <None Include="Assets\GoogleVR\Plugins\Android\proguard-gvr.txt" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Cardboard.xml" />
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/DatenWindows/documents/GitHub/AnimalFarm_Part2/PROJEKT/AnimalFarm/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/DatenWindows/documents/GitHub/AnimalFarm_Part2/PROJEKT/AnimalFarm/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/DatenWindows/documents/GitHub/AnimalFarm_Part2/PROJEKT/AnimalFarm/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

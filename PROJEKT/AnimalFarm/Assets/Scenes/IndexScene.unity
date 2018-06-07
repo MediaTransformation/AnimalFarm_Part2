@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.001
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 1, g: 0.6918865, b: 0.6397059, a: 1}
+  m_AmbientSkyColor: {r: 0.3018868, g: 0.26343894, b: 0.26343894, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 5.99
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 91eef8af0f7fc594b96a01581f5e302b, type: 2}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 0.068
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 1477915551}
-  m_IndirectSpecularColor: {r: 0.11855065, g: 0.04916762, b: 0.039456937, a: 0.068}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -30501,6 +30501,7 @@ GameObject:
   - component: {fileID: 979743531}
   - component: {fileID: 979743536}
   - component: {fileID: 979743537}
+  - component: {fileID: 979743538}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -30866,6 +30867,23 @@ MonoBehaviour:
   jumpSpeed: 8
   movement: 0
   Player: {fileID: 0}
+--- !u!114 &979743538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 979743529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b64190154d9ed724182020eaa6ae14c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightOn: 0
+  sun: {fileID: 1477915551}
+  skyboxDay: {fileID: 2100000, guid: 91eef8af0f7fc594b96a01581f5e302b, type: 2}
+  skyboxNight: {fileID: 2100000, guid: 38e39c570d40c43449765d384b4d270f, type: 2}
+  fullLight: {r: 0.9245283, g: 0.89208686, b: 0.65850836, a: 0}
+  fullDark: {r: 0.33962262, g: 0.29636878, b: 0.29636878, a: 0}
 --- !u!4 &984307213 stripped
 Transform:
   m_PrefabParentObject: {fileID: 482300, guid: 60270cf52a5e94998a5a335989159738, type: 2}
@@ -30937,6 +30955,14 @@ Prefab:
       propertyPath: m_Name
       value: Schlachterwagen_Body
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: 536db8d12a3644c4f8e65f6a63115b5b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cc800074ee051c64eb1b9407143cb334, type: 2}
+    - target: {fileID: 2300008, guid: 536db8d12a3644c4f8e65f6a63115b5b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cc800074ee051c64eb1b9407143cb334, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 536db8d12a3644c4f8e65f6a63115b5b, type: 3}
   m_IsPrefabParent: 0
@@ -41899,7 +41925,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 0.80784315, g: 0.42352942, b: 0.12941177, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0.86
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
