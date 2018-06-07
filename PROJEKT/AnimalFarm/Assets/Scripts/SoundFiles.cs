@@ -9,7 +9,7 @@ public class SoundFiles : MonoBehaviour
     public GameObject obj, player;
     private bool looking;
     public float minDistance = 10.0f;
-    private float distance;
+    private float distance; //Warnung... Ändern?
 
     public AudioClip myclip;
 
@@ -26,6 +26,7 @@ public class SoundFiles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        distance = Vector3.Distance(player.transform.position, obj.transform.position);
 
         if (looking)
         {

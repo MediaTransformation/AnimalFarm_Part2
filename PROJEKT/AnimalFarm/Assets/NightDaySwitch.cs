@@ -18,6 +18,34 @@ public class NightDaySwitch : MonoBehaviour {
         sun.enabled = true;
         RenderSettings.skybox = skyboxDay;
         lightOn = false;
+        //StartCoroutine(Example());
+    }
+
+    void Update()
+    {
+        if (SceneTrigger.boxerGone == true)
+        {
+            StartCoroutine(Example());
+        }
+    }
+
+
+    IEnumerator Example()
+    {
+        yield return new WaitForSeconds(90);
+        //print(Time.time);
+        sun.enabled = false;
+        RenderSettings.skybox = skyboxNight;
+        RenderSettings.ambientLight = fullDark;
+        lightOn = true;
+    }
+
+    /*
+    void Start()
+    {
+        sun.enabled = true;
+        RenderSettings.skybox = skyboxDay;
+        lightOn = false;
     }
 
     // Update is called once per frame
@@ -41,5 +69,5 @@ public class NightDaySwitch : MonoBehaviour {
                 lightOn = false;
             }
         }
-    }
+    }*/
 }
