@@ -5,9 +5,14 @@ using UnityEngine;
 public class NightDaySwitch : MonoBehaviour {
 
     public bool lightOn;
+    public static bool night;
     public Light sun;
     public Material skyboxDay;
     public Material skyboxNight;
+
+    public GameObject sign;
+    public Texture commandment1;
+    public Texture commandment2;
 
     public Color fullLight;
     public Color fullDark;
@@ -17,7 +22,9 @@ public class NightDaySwitch : MonoBehaviour {
     {
         sun.enabled = true;
         RenderSettings.skybox = skyboxDay;
-        lightOn = false;
+        RenderSettings.ambientLight = fullLight;
+        sign.GetComponent<Renderer>().material.mainTexture = commandment1;
+        lightOn = true;
         //StartCoroutine(Example());
     }
 
@@ -25,19 +32,43 @@ public class NightDaySwitch : MonoBehaviour {
     {
         if (SceneTrigger.boxerGone == true)
         {
-            StartCoroutine(Example());
+            StartCoroutine(Switch());
         }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+
+            if (lightOn == false)
+            {
+                sun.enabled = false;
+                RenderSettings.skybox = skyboxNight;
+                RenderSettings.ambientLight = fullDark;
+                sign.GetComponent<Renderer>().material.mainTexture = commandment2;
+                lightOn = true;
+            }
+            else
+            {
+                sun.enabled = true;
+                RenderSettings.skybox = skyboxDay;
+                RenderSettings.ambientLight = fullLight;
+                sign.GetComponent<Renderer>().material.mainTexture = commandment1;
+                lightOn = false;
+            }
+        }
+
     }
 
 
-    IEnumerator Example()
+    IEnumerator Switch()
     {
         yield return new WaitForSeconds(90);
         //print(Time.time);
         sun.enabled = false;
         RenderSettings.skybox = skyboxNight;
         RenderSettings.ambientLight = fullDark;
-        lightOn = true;
+        sign.GetComponent<Renderer>().material.mainTexture = commandment2;
+        lightOn = false;
+        night = true;
     }
 
     /*

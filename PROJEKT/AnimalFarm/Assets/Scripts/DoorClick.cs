@@ -13,7 +13,7 @@ public class DoorClick : MonoBehaviour {
 
 	public bool open;
 	public bool close;
-	private bool isOpen;
+	public bool isOpen;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +21,7 @@ public class DoorClick : MonoBehaviour {
 		open = false;
 		close = false;
 		looking = false;
+        isOpen = true;
 	}
 	
 	// Update is called once per frame
@@ -43,7 +44,7 @@ public class DoorClick : MonoBehaviour {
 						close = false;
 						isOpen = true;
                     }
-                    else
+                    else if (isOpen == true)
                     {
                         animator.enabled = true;
 						close = true;

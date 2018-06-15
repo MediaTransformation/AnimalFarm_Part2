@@ -20,22 +20,11 @@ public class SceneTrigger2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (SceneTrigger.boxerGone)
+        if (NightDaySwitch.night == true)
         {
+            StartCoroutine(Scene2());
 
-            director = timeline.GetComponent<PlayableDirector>();
-
-            if (ColliderEnter.colliderReady == 1)
-            {
-                director.Play();
-            }
-            else
-            {
-                director.Stop();
-            }
         }
-
-
 
 
 /*		if(Input.GetKeyDown(KeyCode.Space)) {
@@ -52,4 +41,20 @@ public class SceneTrigger2 : MonoBehaviour {
 
 		}*/
 	}
+
+    IEnumerator Scene2()
+    {
+
+        yield return new WaitForSeconds(90);
+        director = timeline.GetComponent<PlayableDirector>();
+
+        if (ColliderEnter.colliderReady == 1)
+        {
+            director.Play();
+        }
+        else
+        {
+            director.Stop();
+        }
+    }
 }

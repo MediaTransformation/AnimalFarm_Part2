@@ -21,6 +21,8 @@ public class SceneTrigger : MonoBehaviour {
         looking = false;
         boxerGone = false;
         drop = false;
+
+
     }
 	
 	// Update is called once per frame
