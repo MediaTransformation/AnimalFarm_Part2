@@ -61,10 +61,6 @@
   <ItemGroup>
     <Compile Include="Assets\Animations\AnimScene\SceneTrigger.cs" />
     <Compile Include="Assets\Animations\AnimScene2\SceneTrigger2.cs" />
-    <Compile Include="Assets\BunnyController.cs" />
-    <Compile Include="Assets\BunnyController2.cs" />
-    <Compile Include="Assets\BunnyJump.cs" />
-    <Compile Include="Assets\BunnyNew.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoSceneManager.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\HelloVR\HeadsetDemoManager.cs" />
@@ -168,7 +164,10 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrVRHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
-    <Compile Include="Assets\NightDaySwitch.cs" />
+    <Compile Include="Assets\Scripts\BunnyController.cs" />
+    <Compile Include="Assets\Scripts\BunnyController2.cs" />
+    <Compile Include="Assets\Scripts\BunnyJump.cs" />
+    <Compile Include="Assets\Scripts\BunnyNew.cs" />
     <Compile Include="Assets\Scripts\ColliderEnter.cs" />
     <Compile Include="Assets\Scripts\Creep.cs" />
     <Compile Include="Assets\Scripts\DoorClick.cs" />
@@ -179,6 +178,7 @@
     <Compile Include="Assets\Scripts\jumpingWell.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\Movement2.cs" />
+    <Compile Include="Assets\Scripts\NightDaySwitch.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\SoundFiles.cs" />
     <Compile Include="Assets\Scripts\SoundOnClick.cs" />
