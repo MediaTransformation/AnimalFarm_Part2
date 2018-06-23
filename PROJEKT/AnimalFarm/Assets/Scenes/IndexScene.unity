@@ -13322,7 +13322,7 @@ Transform:
   m_LocalScale: {x: 0.5854399, y: 0.8432916, z: 0.9866543}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -132.71501}
 --- !u!65 &373153777
 BoxCollider:
@@ -20045,35 +20045,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27977a70a20b90a408f2caee7432861c, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &459422848
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100006, guid: 819fcb87df607fc44b783b4c1e1810f7, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 459422849}
-  m_Layer: 0
-  m_Name: Ziege
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &459422849
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400006, guid: 819fcb87df607fc44b783b4c1e1810f7, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 459422848}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 156.44455, y: 100.425735, z: 218.44005}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 881338586}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &462177759
 GameObject:
   m_ObjectHideFlags: 0
@@ -27921,7 +27892,7 @@ Transform:
   - {fileID: 1965895233}
   - {fileID: 625896449}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &823403354
 BoxCollider:
@@ -28555,7 +28526,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a9f27bd20b988249868ba5ee0504217, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a9f27bd20b988249868ba5ee0504217, type: 3}
       propertyPath: m_LocalScale.x
@@ -29399,7 +29370,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ec3c13dd51f0364ba10a138090b4695, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 9ec3c13dd51f0364ba10a138090b4695, type: 3}
       propertyPath: m_Name
@@ -29641,6 +29612,7 @@ GameObject:
   - component: {fileID: 881338586}
   - component: {fileID: 881338588}
   - component: {fileID: 881338587}
+  - component: {fileID: 881338589}
   m_Layer: 0
   m_Name: Ziege
   m_TagString: Untagged
@@ -29654,12 +29626,12 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 819fcb87df607fc44b783b4c1e1810f7, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 881338585}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.0075205, y: 1.559, z: -2.86}
-  m_LocalScale: {x: 4.2278047, y: 4.227803, z: 4.227803}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 156.43703, y: 101.98473, z: 215.58005}
+  m_LocalScale: {x: 4.2278047, y: 4.227805, z: 4.227805}
   m_Children: []
-  m_Father: {fileID: 459422849}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &881338587
 MeshRenderer:
@@ -29708,6 +29680,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 881338585}
+  m_Mesh: {fileID: 4300002, guid: 819fcb87df607fc44b783b4c1e1810f7, type: 3}
+--- !u!64 &881338589
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 881338585}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 819fcb87df607fc44b783b4c1e1810f7, type: 3}
 --- !u!1001 &885719004
 Prefab:
@@ -31415,6 +31401,7 @@ GameObject:
   - component: {fileID: 979743536}
   - component: {fileID: 979743537}
   - component: {fileID: 979743538}
+  - component: {fileID: 979743539}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -31775,7 +31762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e4422898f12c94fa561a6e4398d51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   isWalking: 0
   jumpSpeed: 8
   movement: 0
@@ -31800,6 +31787,24 @@ MonoBehaviour:
   commandment2: {fileID: 2800000, guid: 0383b32c9f1a88449980994344f8ef86, type: 3}
   fullLight: {r: 0.9245283, g: 0.89208686, b: 0.65850836, a: 0}
   fullDark: {r: 0.33962262, g: 0.2707369, b: 0.2707369, a: 0}
+--- !u!114 &979743539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 979743529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c899ca94a5b731448bcec5541d29415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clampInDegrees: {x: 360, y: 180}
+  lockCursor: 0
+  sensitivity: {x: 2, y: 2}
+  smoothing: {x: 3, y: 3}
+  targetDirection: {x: 0, y: 0}
+  targetCharacterDirection: {x: 0, y: 0}
+  characterBody: {fileID: 0}
 --- !u!4 &984307213 stripped
 Transform:
   m_PrefabParentObject: {fileID: 482300, guid: 60270cf52a5e94998a5a335989159738, type: 2}
@@ -43260,7 +43265,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
