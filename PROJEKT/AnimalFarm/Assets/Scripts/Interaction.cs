@@ -31,7 +31,7 @@ public class Interaction : MonoBehaviour {
             {
 
                 
-                if (Input.GetButtonDown("Fire1"))
+                if (Input.GetButton("Fire1"))
                 {
 
                     Testflasche.SetActive(false);

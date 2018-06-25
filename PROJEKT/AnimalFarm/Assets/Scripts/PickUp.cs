@@ -30,7 +30,7 @@ public class PickUp : MonoBehaviour {
             if (distance <= minDistance)
             {
                 
-					if (Input.GetButtonDown("Fire1"))
+					if (Input.GetButton("Fire1"))
 					{
 
 						Testflasche.SetActive(false);

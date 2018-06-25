@@ -14767,7 +14767,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: c6451100575ecb243b2ec51d0fb8b0ea, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -31394,13 +31394,13 @@ GameObject:
   m_Component:
   - component: {fileID: 979743530}
   - component: {fileID: 979743534}
-  - component: {fileID: 979743533}
   - component: {fileID: 979743532}
   - component: {fileID: 979743535}
   - component: {fileID: 979743531}
   - component: {fileID: 979743536}
   - component: {fileID: 979743537}
   - component: {fileID: 979743538}
+  - component: {fileID: 979743533}
   - component: {fileID: 979743539}
   m_Layer: 0
   m_Name: Player
@@ -31620,14 +31620,11 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 979743529}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73272ead21128e34a98083f9ccf6db95, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ca441e2a6532d64ca5726dc631f66b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  isWalking: 0
-  jumpSpeed: 8
 --- !u!143 &979743534
 CharacterController:
   m_ObjectHideFlags: 0

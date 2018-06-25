@@ -180,10 +180,11 @@
     <Compile Include="Assets\Scripts\Movement2.cs" />
     <Compile Include="Assets\Scripts\NightDaySwitch.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
+    <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\SoundFiles.cs" />
     <Compile Include="Assets\Scripts\SoundOnClick.cs" />
-    <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\SimpleSmoothMouseLook.cs" />
+    <Compile Include="Assets\TestButton.cs" />
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrController.shader" />
