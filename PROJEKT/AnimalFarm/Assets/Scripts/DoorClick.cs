@@ -21,7 +21,7 @@ public class DoorClick : MonoBehaviour {
 		open = false;
 		close = false;
 		looking = false;
-        isOpen = true;
+        isOpen = false;
 	}
 	
 	// Update is called once per frame

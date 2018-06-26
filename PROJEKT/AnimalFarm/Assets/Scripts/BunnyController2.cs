@@ -43,7 +43,7 @@ public class BunnyController2 : MonoBehaviour
         {
             if (distance <= minDistance)
             {
-                if (Input.GetButton("Fire1"))
+                if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Joystick1Button0))
                 {
                     if(jump == false) 
                     {

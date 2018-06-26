@@ -14,7 +14,7 @@ public class TestButton : MonoBehaviour {
         if(Input.GetKey(KeyCode.JoystickButton0))
             
         {
-            print("Action");
+            //print("Action");
         }
 		
 	}

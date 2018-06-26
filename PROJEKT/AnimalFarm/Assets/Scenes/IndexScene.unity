@@ -22987,7 +22987,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -31402,6 +31402,7 @@ GameObject:
   - component: {fileID: 979743538}
   - component: {fileID: 979743533}
   - component: {fileID: 979743539}
+  - component: {fileID: 979743540}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -31802,6 +31803,17 @@ MonoBehaviour:
   targetDirection: {x: 0, y: 0}
   targetCharacterDirection: {x: 0, y: 0}
   characterBody: {fileID: 0}
+--- !u!114 &979743540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 979743529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a9d25607a660e4abe650721a595a70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &984307213 stripped
 Transform:
   m_PrefabParentObject: {fileID: 482300, guid: 60270cf52a5e94998a5a335989159738, type: 2}
