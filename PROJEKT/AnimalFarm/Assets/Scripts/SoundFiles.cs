@@ -34,7 +34,7 @@ public class SoundFiles : MonoBehaviour
             {
 
 
-                if (Input.GetButton("Fire1"))
+                if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Joystick1Button0))
                     //if (Input.GetKey(KeyCode.JoystickButton0))
                     {
                     this.GetComponent<AudioSource>().Play();
