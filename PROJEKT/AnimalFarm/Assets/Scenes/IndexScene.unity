@@ -3187,7 +3187,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4309743995697292, guid: 3b1e3e9155d404942bc65d9aa80120ba, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.4787
+      value: -7.17
       objectReference: {fileID: 0}
     - target: {fileID: 4309743995697292, guid: 3b1e3e9155d404942bc65d9aa80120ba, type: 2}
       propertyPath: m_LocalPosition.z
@@ -38466,8 +38466,8 @@ GameObject:
   - component: {fileID: 881338586}
   - component: {fileID: 881338588}
   - component: {fileID: 881338587}
-  - component: {fileID: 881338589}
   - component: {fileID: 881338590}
+  - component: {fileID: 881338589}
   m_Layer: 0
   m_Name: Ziege
   m_TagString: Untagged
@@ -60812,6 +60812,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27977a70a20b90a408f2caee7432861c, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1536848573 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100040, guid: ca981bbdb5033db4c9882091f8356975, type: 3}
+  m_PrefabInternal: {fileID: 1740188177}
+--- !u!64 &1536848575
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536848573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1537044278
 Prefab:
   m_ObjectHideFlags: 0
