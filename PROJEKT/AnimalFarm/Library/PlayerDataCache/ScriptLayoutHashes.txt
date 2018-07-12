@@ -1,6 +1,6 @@
-WindowsStandalone
+Android
 PlayerPath?
-C:/Users/VeraM/Documents/GitHub/AnimalFarm_Part2/PROJEKT/AnimalFarmGame/AnimalFarmGame.exe
+C:/Users/Computer/Documents/GitHub/AnimalFarm_Part2/PROJEKT/AnimalFarmAndroid/AnimalFarm_2018-07-12.apk
 SceneListBegin?
 Assets/Scenes/IndexScene.unity
 SceneListEnd?
