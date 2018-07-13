@@ -455,7 +455,6 @@ PlayerSettings:
   switchAllowsRuntimeAddOnContentInstall: 0
   switchDataLossConfirmation: 0
   switchSupportedNpadStyles: 3
-  switchNativeFsCacheSize: 32
   switchSocketConfigEnabled: 0
   switchTcpInitialSendBufferSize: 32
   switchTcpInitialReceiveBufferSize: 64
@@ -691,9 +690,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 9440e124-734b-4754-b7a2-a81fbbede157
-  projectName: AnimalFarmAM3
-  organizationId: ausfuesschen
+  cloudProjectId: b540c050-0f46-48b1-a3f2-fcdf0d6d60af
+  projectName: AnimalFarmAM3 (1)
+  organizationId: vmaliesk
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

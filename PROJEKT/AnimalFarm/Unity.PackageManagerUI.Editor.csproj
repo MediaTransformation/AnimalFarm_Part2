@@ -418,6 +418,8 @@
     <Compile Include="C:\Users\Lazy\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Sources\UI\PackageSearchFilterTabs.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\GameDev-Profi.de\UnityPlatformer\Audio\_Info Quellen und Nutzungsrechte_.txt" />
+    <None Include="Assets\GameDev-Profi.de\UnityPlatformer\Version.txt" />
     <None Include="Assets\GoogleVR\Demos\Shaders\HelloVR\HelloVRUnlitGrayscaleToColor.shader" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-6DOF.xml" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Cardboard.xml" />
