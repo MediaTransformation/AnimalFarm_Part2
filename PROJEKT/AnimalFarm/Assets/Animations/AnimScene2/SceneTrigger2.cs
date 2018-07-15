@@ -7,24 +7,49 @@ using UnityEngine.Timeline;
 public class SceneTrigger2 : MonoBehaviour {
 	//Schwatzwutz Rede mit allen Tieren usw
 
-	public PlayableDirector director;
+    
+	public PlayableDirector schwatzwutzShout;
+    public PlayableDirector scene2;
     public GameObject schwatzwutz, timeline;
 
-	public bool ready;
+	public static bool ready;
+    public static bool end;
 
 	// Use this for initialization
 	void Start () {
-		ready = true;
+		ready = false;
+        end = false;
 		//jump.enabled = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (NightDaySwitch.night == true)
+        if (NightDaySwitch.anim2ready == true)
         {
-            StartCoroutine(Scene2());
-
+            NightDaySwitch.anim2ready = false;
+            StartCoroutine(shout());
+            //schwatzwutzShout = schwatzwutz.GetComponent<PlayableDirector>();
+            //schwatzwutzShout.Play();
+            //NightDaySwitch.anim2ready = false;
         }
+
+        if (ColliderEnter.speachReady == true)
+        {
+            //schwatzwutzShout.Stop();
+            //ready = true;
+            ColliderEnter.speachReady = false;
+            scene2 = timeline.GetComponent<PlayableDirector>();
+            scene2.Play();
+            end = true;
+        }
+
+        /*if (ready == true)
+        {
+            print("Go!");
+            //StartCoroutine(Scene2());
+            scene2 = timeline.GetComponent<PlayableDirector>();
+            scene2.Play();
+        }*/
 
 
 /*		if(Input.GetKeyDown(KeyCode.Space)) {
@@ -42,19 +67,29 @@ public class SceneTrigger2 : MonoBehaviour {
 		}*/
 	}
 
-    IEnumerator Scene2()
+    IEnumerator shout()
     {
+        yield return new WaitForSeconds(10);
+        schwatzwutzShout = schwatzwutz.GetComponent<PlayableDirector>();
+        schwatzwutzShout.Play();
+        yield return new WaitForSeconds(10);
+        ready = true;
 
-        yield return new WaitForSeconds(90);
-        director = timeline.GetComponent<PlayableDirector>();
-
-        if (ColliderEnter.colliderReady == 1)
+        /*if (ColliderEnter.speachReady == true)
         {
-            director.Play();
-        }
-        else
-        {
-            director.Stop();
-        }
+            //schwatzwutzShout.Stop();
+            NightDaySwitch.anim2ready = false;
+            ready = true;
+        }*/
     }
+
+    IEnumerator Scene2()
+    {    
+        yield return new WaitForSeconds(0);
+        scene2 = timeline.GetComponent<PlayableDirector>();
+        scene2.Play();
+    }
+
+
+
 }

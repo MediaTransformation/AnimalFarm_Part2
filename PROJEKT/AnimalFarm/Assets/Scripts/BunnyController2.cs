@@ -17,9 +17,10 @@ public class BunnyController2 : MonoBehaviour
     public AudioClip welcomeClip;
     public AudioClip medizinSearch;
     public AudioClip medizinDrop;
+    public AudioClip commandments;
 
-    public enum jumpstate {welcome, medizin};
-    jumpstate state;
+    public enum jumpstate {welcome, medizin, commandments};
+    public static jumpstate state;
 
     // Use this for initialization
     void Start()
@@ -56,14 +57,20 @@ public class BunnyController2 : MonoBehaviour
                             GetComponent<AudioSource>().PlayOneShot(welcomeClip);
                             state = jumpstate.medizin;
                         }
-                        else if (state == jumpstate.medizin)
+                        else if (state == jumpstate.medizin && PickUp.carry == false)
                         {
                             GetComponent<AudioSource>().PlayOneShot(medizinSearch);
-                            //state = jumpstate.medizin;
                         }
-                        else if (SceneTrigger.drop == true)
+                        else if (SceneTrigger2.end == true)
                         {
-                            GetComponent<AudioSource>().PlayOneShot(medizinDrop);
+                            GetComponent<AudioSource>().PlayOneShot(commandments);
+                        }
+                        else if (SceneTrigger2.end == false && state == jumpstate.medizin)
+                        {                           
+                            if(SceneTrigger.drop == false)
+                            {
+                                GetComponent<AudioSource>().PlayOneShot(medizinDrop);
+                            } 
                         }
 
                     } else
@@ -72,7 +79,6 @@ public class BunnyController2 : MonoBehaviour
                         b_jump.enabled = false;
                         jump = false;
                     }
-
                 }
             }
 

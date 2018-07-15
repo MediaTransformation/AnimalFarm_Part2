@@ -35,7 +35,7 @@ public class SceneTrigger : MonoBehaviour {
             {
 
 
-                if (Input.GetButtonDown("Fire1"))
+                if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Joystick1Button0))
                 {
                     if(PickUp.carry == true) {
                         //Schwatzwutz noch Dazu
@@ -43,7 +43,7 @@ public class SceneTrigger : MonoBehaviour {
 
                         Flasche.SetActive(false);
                         drop = true;
-
+                        BunnyController2.state = BunnyController2.jumpstate.commandments;
                     } else {
                         GetComponent<AudioSource>().PlayOneShot(search, 0.7F);
                     }
@@ -51,11 +51,13 @@ public class SceneTrigger : MonoBehaviour {
             }
         }
 
-        if (ColliderEnter.colliderReady == 3)
+        //if (ColliderEnter.colliderReady == 3)
+        if(drop == true && boxerGone == false)
         {
             director = timeline.GetComponent<PlayableDirector>();
             director.Play();
             boxerGone = true;
+            drop = false;
         }
     }
 

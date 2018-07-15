@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class ColliderEnter : MonoBehaviour {
 
-	public static int colliderReady;
+	public static bool speachReady;
 
 		void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "Enter")
+        if (collider.gameObject.tag == "Enter" && SceneTrigger2.ready == true)
         {
-            colliderReady = 1;
-
+            print("Go!");
+            speachReady = true;
         }
-        else if (collider.gameObject.tag == "Exit")
+        /*else if (collider.gameObject.tag == "Exit")
         {
             colliderReady = 2;
         }
@@ -24,6 +24,6 @@ public class ColliderEnter : MonoBehaviour {
             {
                 colliderReady = 3;
             }
-        }
+        }*/
     }
 }

@@ -246,7 +246,7 @@ cfa93710d56cd4da2a3b2eec27bc1139 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 5f8dad7baa09de0a978cadd6c5d4aae2 Assembly-CSharp.dll:.PlayerMove
 e97ff9540a49b92b779792c195839d33 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Effects.AfterburnerPhysicsForce
 ec7197ab43ffb42a7321b609332a9861 Assembly-CSharp.dll:.GvrTrackedController
-46460551f35e99146b47fddd63682ff6 Assembly-CSharp.dll:.BunnyController2
+a62cf08367f33e765b75e8b35f1d32ef Assembly-CSharp.dll:.BunnyController2
 31e91faba2267dbf8c0fe528bca54ff7 Assembly-CSharp.dll:.GvrLaserPointer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.WaterBasic
 0c4dea12d5ccc08c2c80e5a188a9699c Assembly-CSharp.dll:.MouseLook
@@ -334,7 +334,7 @@ a8b185f93b85036e13e3f553c802615a Assembly-CSharp.dll:.GvrTooltip
 764d2ecb131d46720e1b8d63b8f7c2ba Assembly-CSharp.dll:GoogleVR.KeyboardDemo.KeyboardDelegateExample
 6b8bc70a4e737406cfd584f788ef5376 Assembly-CSharp.dll:.GvrAudioSource
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FPSCounter
-d075cf4e8a017ced84f4c21de7cd0608 Assembly-CSharp.dll:.SceneTrigger2
+fa167e7bdbe882f83d9580e6d2363d78 Assembly-CSharp.dll:.SceneTrigger2
 7f88db6deea6b4d2af344791aaa07731 Assembly-CSharp.dll:.GvrPointerInputModule
 7d05c1a36ca8db05546065b852216990 Assembly-CSharp.dll:.GvrController
 0993c6cb8df0e25910c3ca6e47a7f2de Assembly-CSharp.dll:GoogleVR.VideoDemo.MenuHandler

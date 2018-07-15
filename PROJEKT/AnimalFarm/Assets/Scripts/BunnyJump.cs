@@ -7,7 +7,7 @@ public class BunnyJump : MonoBehaviour
 
     public BunnyNew bunny;
     public bool jump;
-    public float height = 5.5f;
+    public float height = 8.5f;
 
     public GameObject Player;
 
@@ -28,7 +28,7 @@ public class BunnyJump : MonoBehaviour
         this.transform.eulerAngles = new Vector3(-90, this.transform.eulerAngles.y, this.transform.eulerAngles.z);
 
         Vector3 newPos = (this.transform.position - Player.transform.position).normalized + Player.transform.position;
-        this.transform.position = new Vector3(newPos.x + 1, newPos.y, newPos.z);
+        this.transform.position = new Vector3(newPos.x + 2, newPos.y + 1, newPos.z);
 
     }
 

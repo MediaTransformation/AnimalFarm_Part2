@@ -5,6 +5,7 @@ using UnityEngine;
 public class NightDaySwitch : MonoBehaviour {
 
     public bool lightOn;
+    public static bool anim2ready;
     public static bool night;
     public Light sun;
     public Material skyboxDay;
@@ -25,14 +26,21 @@ public class NightDaySwitch : MonoBehaviour {
         RenderSettings.ambientLight = fullLight;
         sign.GetComponent<Renderer>().material.mainTexture = commandment1;
         lightOn = true;
+        night = false;
+        anim2ready = false;
         //StartCoroutine(Example());
     }
 
     void Update()
     {
-        if (SceneTrigger.boxerGone == true)
+        if (SceneTrigger.boxerGone == true && night == false)
         {
-            StartCoroutine(Switch());
+
+            StartCoroutine(Switch1());
+
+        } else if(night == true)
+        {
+            StartCoroutine(Switch2());
         }
 
         if (Input.GetKeyDown(KeyCode.F))
@@ -59,9 +67,9 @@ public class NightDaySwitch : MonoBehaviour {
     }
 
 
-    IEnumerator Switch()
+    IEnumerator Switch1()
     {
-        yield return new WaitForSeconds(90);
+        yield return new WaitForSeconds(10);
         //print(Time.time);
         sun.enabled = false;
         RenderSettings.skybox = skyboxNight;
@@ -69,6 +77,21 @@ public class NightDaySwitch : MonoBehaviour {
         sign.GetComponent<Renderer>().material.mainTexture = commandment2;
         lightOn = false;
         night = true;
+        SceneTrigger.boxerGone = false;
+    }
+
+    IEnumerator Switch2()
+    {
+        yield return new WaitForSeconds(10);
+        //print(Time.time);
+        sun.enabled = true;
+        RenderSettings.skybox = skyboxDay;
+        RenderSettings.ambientLight = fullLight;
+        sign.GetComponent<Renderer>().material.mainTexture = commandment1;
+        lightOn = false;
+        night = false;
+        anim2ready = true;
+        
     }
 
     /*

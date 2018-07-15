@@ -30,12 +30,12 @@ public class PickUp : MonoBehaviour {
             if (distance <= minDistance)
             {
                 
-					if (Input.GetButton("Fire1"))
+					if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Joystick1Button0))
 					{
 
 						Testflasche.SetActive(false);
 						Flasche.SetActive(true);
-						carry = true;
+						carry = true;                      
 					}  
             }
         } 
