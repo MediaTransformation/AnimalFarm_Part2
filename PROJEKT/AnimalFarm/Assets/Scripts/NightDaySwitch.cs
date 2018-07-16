@@ -69,7 +69,7 @@ public class NightDaySwitch : MonoBehaviour {
 
     IEnumerator Switch1()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(250);
         //print(Time.time);
         sun.enabled = false;
         RenderSettings.skybox = skyboxNight;
@@ -82,7 +82,7 @@ public class NightDaySwitch : MonoBehaviour {
 
     IEnumerator Switch2()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(30);
         //print(Time.time);
         sun.enabled = true;
         RenderSettings.skybox = skyboxDay;
