@@ -24,9 +24,13 @@ Anja: - Modelle: Hase (Erzähler), Pferde (Boxer jung/alt), Schweine (Napoleon, 
 
 
 Vivi: - Modelle: Bäume Büsche und Gräser und Felsen, Whiskeyboxen kaputte Mühle + Mühlenrad, Medizinflasche, Beschilderung Wolken, Farmhaustisch, Lampen/Laternen, 
+
       - Beleuchtung der Farm: Lichteinstellungen der Laternen mit passenden Partikelsystemen die Glühwürmchen darstellen sollen
+      
       - Erstellen des Dialogskripts für die Vertonung der ausgewählten Szenen (auf Basis der Buchvorlage), sowie Texte für die Vertonung der Schilder sowie des Erzählerhasen (alles selbst gesprochen)
+      
       - Vertonung: Audiosequenzen des Hasen und der zwei implementieren, animierten Szenen, sowie der Schilder und einem Easter Egg (Brunnen) ( alles selbst gesprochen)
+      
       - Beschriftung der Objekte: Schilder, Abdeckerwagen, die Gebote auf der Scheune
       
       
