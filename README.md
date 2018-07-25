@@ -18,12 +18,18 @@ Unser Hauptziel war es, unseren eigenen Stil zu verwirklichen und dafür alles s
 
 Vera:
 
-Anja: - Modelle: Hase (Erzähler), Pferde (Boxer jung/alt), Schweine (Napoleon, Schwatzwutz, Standard-Schwein),Esel, Ziege,                         Zauntor am Ausgang der Farm, Berge die das Terrain umranden
+Anja:  
+
+-Modelle: Hase (Erzähler), Pferde (Boxer jung/alt), Schweine (Napoleon, Schwatzwutz, Standard-Schwein),Esel, Ziege,                            Zauntor am Ausgang der Farm, Berge die das Terrain umranden
+
       - Partikelsystem des Farmgrounds
+      
       - Skybox Design (Tag/Nacht)
 
 
-Vivi: - Modelle: Bäume Büsche und Gräser und Felsen, Whiskeyboxen kaputte Mühle + Mühlenrad, Medizinflasche, Beschilderung Wolken, Farmhaustisch, Lampen/Laternen, 
+Vivi:
+
+    - Modelle: Bäume Büsche und Gräser und Felsen, Whiskeyboxen kaputte Mühle + Mühlenrad, Medizinflasche, Beschilderung Wolken, Farmhaustisch, Lampen/Laternen, 
 
       - Beleuchtung der Farm: Lichteinstellungen der Laternen mit passenden Partikelsystemen die Glühwürmchen darstellen sollen
       
