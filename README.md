@@ -39,6 +39,8 @@ Vivi:
       
       - Beschriftung der Objekte: Schilder, Abdeckerwagen, die Gebote auf der Scheune
       
+      - Erstellen des 'Read me'
+      
       
       
       
