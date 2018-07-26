@@ -30,12 +30,16 @@ Vera:
       
       - Modelle: Scheune, Farmhaus, Stall, Steinwagen, Abdeckerwagen
       
-      - Porgrammierung: Custom-MouseLook für Windows-Version, Custom-Spieler-Bewegung (va für VR wichtig), Interaktion mit Objekten (Türen, Flasche), Audiosequenz durch Anklicken (Schilder, Boxer, Hase), Hasen-Controller (springt zum Sprechen nach vorne und zurück an seinen Platz), Szenen-Trigger (Szene1, Szene 1.5 und 2, hüpfender Brunnen), Tag/Nacht-Wechsel, Player-Controller (Objekt nach Plattform), Beenden der Pc-Version durch ESC-Taste
+      - Porgrammierung (Allgemein): Custom-MouseLook für Windows-Version, Custom-Spieler-Bewegung (va für VR wichtig), Tag/Nacht-Wechsel, Player-Controller (Objekt nach Plattform), Beenden der Pc-Version durch ESC-Taste
+      
+      - Programmierung (Szene): Audiosequenz durch Anklicken (Schilder, Boxer, Hase), Szenen-Trigger (Szene1, Szene 1.5 und 2, hüpfender Brunnen), Interaktion mit Objekten (Türen, Flasche), Hasen-Controller (springt zum Sprechen nach vorne und zurück an seinen Platz)
       
       - Animation: Szene 1 (Boxer wird abtransportiert), Szene 1.5 (Schwatzwutz ruft zur Rede), Szene 2 (Rede über Boxers Tod), hüpfender Brunnen --> alles inklusive Sounddateien, implementiert über "Timeline"
       fallende Whiskeykisten, Wolkenbewegung
       
-      - Sonstiges: Icon und Splash-Image von Pc- und Android-Version, Erstellung des Terrains, externe Asset-Implementierung (VR-Komponenten, Schlachter, zusätzliche Tiere, Brunnen, Heu, Zaun), Custom-Player (Position Kamera, Bewegungsmöglichkeit, "Körper"), Erstellung der ausführbaren Dateien (exe-Datei und Android-App)
+      - Development: Icon und Splash-Image von Pc- und Android-Version, Erstellung der ausführbaren Dateien (exe-Datei und Android-App)
+      
+      - Sonstiges:  Erstellung des Terrains, externe Asset-Implementierung (VR-Komponenten, Schlachter, zusätzliche Tiere, Brunnen, Heu, Zaun), Custom-Player (Position Kamera, Bewegungsmöglichkeit, "Körper") 
 
 Anja: 
 
