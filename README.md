@@ -30,9 +30,13 @@ Vera:
       
       - Modelle: Scheune, Farmhaus, Stall, Steinwagen, Abdeckerwagen
       
-      - Porgrammierung (Allgemein): Custom-MouseLook für Windows-Version, Custom-Spieler-Bewegung (va für VR wichtig), Tag/Nacht-Wechsel, Player-Controller (Objekt nach Plattform), Beenden der Pc-Version durch ESC-Taste
+      - Programmierung (Allgemein): 
+      Custom-MouseLook für Windows-Version, Custom-Spieler-Bewegung (Bewegung in Blickrichtung),  Player-Controller (Objekt nach Plattform),
+      einmaliger Tag/Nacht-Wechsel, Beenden der Pc-Version durch ESC-Taste
       
-      - Programmierung (Szene): Audiosequenz durch Anklicken (Schilder, Boxer, Hase), Szenen-Trigger (Szene1, Szene 1.5 und 2, hüpfender Brunnen), Interaktion mit Objekten (Türen, Flasche), Hasen-Controller (springt zum Sprechen nach vorne und zurück an seinen Platz)
+      - Programmierung (Szene): 
+      Audiosequenz durch Anklicken (Schilder, Boxer, Hase), Szenen-Trigger (Szene1, Szene 1.5 und 2, hüpfender Brunnen), 
+      Interaktion mit Objekten (Türen, Flasche), Hasen-Controller (springt zum Sprechen nach vorne und zurück an seinen Platz)
       
       - Animation: Szene 1 (Boxer wird abtransportiert), Szene 1.5 (Schwatzwutz ruft zur Rede), Szene 2 (Rede über Boxers Tod), hüpfender Brunnen --> alles inklusive Sounddateien, implementiert über "Timeline"
       fallende Whiskeykisten, Wolkenbewegung
