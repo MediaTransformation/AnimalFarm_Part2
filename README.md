@@ -9,17 +9,19 @@ Der Spieler kann beim Rundgang auf dem Farmgelände mit vielen Objekten interagi
 
 Erzählerhase: Der Erzählerhase wurde so programmiert, dass er dem Spieler folgt und immer an seiner Seite ist. Wenn man ihn anklickt, springt er ins Blickfeld des Spielers und es werden verschiedene Audiosequenzen abgespielt. Dabei fungiert er auch als Hilfestellung, wenn der Spieler nicht weiter weiß. 
 
-Schilder: Die Schilder die auf dem Famrgelände, meist vor Gebäuden, stehen geben dem Spieler, beim Klicken auf diese, mithilfe einer Audiosequenz Auskunft über das jeweilige Gebäude und etwas narrativen Kontext.
+Schilder: Die Schilder, die auf dem Famrgelände - meist vor Gebäuden - stehen, geben dem Spieler, beim Klicken auf diese, mithilfe einer Audiosequenz Auskunft über das jeweilige Gebäude und etwas narrativen Kontext.
 
 Gebäude: Die Gebäude können betreten werden, die Türen sind animiert und öffnen/schließen sich beim Klicken auf diese.
 
-Animationen: Die meisten der Animationen in Animal Farm wurden mit der Timeline erstellt und über Scripte gesteuert. 
+Animationen: Die meisten der Animationen in Animal Farm wurden einzeln erstellt und über die Timeline organisiert, welche dann über Scripte gestartet werden konnte. Dies hatte den Vorteil, dass eine komplette Animationssequenz mit Sounddateien erstellt werden konnte.
 
 Szene 1: Die erste animierte Szene umschließt den ersten Teil des neunten Kapitels von "Die Farm der Tiere". Diese wird getriggert, wenn der Spieler eine Medizinflasche im Stall aufhebt (durch klicken) und diese Boxer (Pferd im Stall) übergibt. Nachdem der Spieler die Flasche übergeben hat wird die animierte Szene abgespielt und er kann nicht ins Geschehen eingreifen, er ist nur Zuschauer in diesem Moment.
 
-Szene 2: Die zweite animierte Szene umschließt den zweiten Teil des neunten Kapitels. Diese wird nach Ablauf einer bestimmten Zeit nach Ende der ersten Szene getriggert. Beide Szenen sind dazu da, um dem Spieler einen gewählten Ausschnitt der Geschichte George Orwells zugänglich und erfahrbar zu machen.
+Szene 2: Die zweite animierte Szene umschließt den zweiten Teil des neunten Kapitels und besteht aus zwei Timelines. Die Erste wird im Anschluss an einen Tag/Nacht-Wechsel getriggert und ist die Einleitung zur eigentlichen Szene, die jedoch erst abgespielt wird, wenn der Spieler einen bestimmten Bereich betritt. 
 
-Tag/Nacht Wechsel und Gebote an der Scheune: Zeitgleich mit dem Trigger der zweiten Szene wird von einer Tagesatmosphäre in eine Nachtatmosphäre gewechselt um einen Zeitsprung zu suggerieren. Damit Verbunden ist eine Änderung der Textur an der Seite der Scheune, auf die der Hase ebenfalls mit einer Audiosequenz hinweist.
+Beide Szenen sind dazu da, um dem Spieler einen gewählten Ausschnitt der Geschichte George Orwells zugänglich und erfahrbar zu machen.
+
+Tag/Nacht Wechsel und Gebote an der Scheune: Am Ende der ersten Szene wird von einer Tagesatmosphäre in eine Nachtatmosphäre gewechselt um einen Zeitsprung zu suggerieren. Ist die Nacht vorbei, wird der erste Teil der 2. Szene angestossen (Schwatzwutz ruft zur Rede). Mit dem Wechsel verbunden ist eine Änderung der Textur an der Seite der Scheune, auf die der Hase ebenfalls mit einer Audiosequenz hinweist.
 
 Easteregg: Bei ersten Tests zur Animation und gekoppelten Tonsequenzen wurde der Brunnen vor dem Farmgebäude animiert und mit einem "Huch" Sound versehen. Dies ist als kleines Easteregg auch in die finale Version mit übernommen worden.
 
@@ -28,7 +30,7 @@ Farbschema: Die Farben in denen die VR Anwendung gehalten ist basieren auf einem
 Plattformen: Animal Farm kann entweder als Pc-Version oder Android-App gestartet werden. Beide Dateien befinden sich im Projektordner. Die exe-Datei liegt im Ordner "AnimalFarmGame" und kann über einen Doppelklick aufgerufen werden. Gespielt wird entweder mit den Richtungstasten oder WASD, sowie der Maus. 
 Die Android-apk befindet sich im Ordner "AnimalFarmAndroid". Für die Bewegung auf der Animal Farm wird ein Controller vorausgesetzt. Aktionen werden mit der Taste 0 ausgelöst. Auf einem PS4-Controller ist das die Taste "X", auf einem Bluetooth- oder XBox-Controller ist die Tastenbelegung nachzulesen. 
 
-Unser Hauptziel war es, unseren eigenen Stil zu verwirklichen und dafür alles selber zu modellieren, zu gestalten und zu animieren um somit so wenig wie möglich auf schon bestehende Assets zurück greifen zu müssen und eine in sich stimmende virtuelle Welt zu erschaffen. Dafür hat jedes Gruppenmitglied seinen Beitrag in verschiedenen Bereichen geleistet, es folgt eine kurze Auflistung der Aufgabenbereiche der einzelnen Gruppenmitglieder, um einen Überblick über unsere Gruppenarbeit in den letzten zwei Semestern zu verschaffen.
+Unser Hauptziel war es, unseren eigenen Stil zu verwirklichen und dafür alles selber zu modellieren, zu gestalten und zu animieren um somit so wenig wie möglich auf schon bestehende Assets zurück greifen zu müssen und eine in sich stimmige virtuelle Welt zu erschaffen. Dafür hat jedes Gruppenmitglied seinen Beitrag in verschiedenen Bereichen geleistet. Es folgt eine kurze Auflistung der Aufgabenbereiche der einzelnen Gruppenmitglieder, um einen Überblick über unsere Gruppenarbeit in den letzten zwei Semestern zu verschaffen.
 
 Vera: 
       
@@ -42,7 +44,7 @@ Vera:
       Audiosequenz durch Anklicken (Schilder, Boxer, Hase), Szenen-Trigger (Szene1, Szene 1.5 und 2, hüpfender Brunnen), 
       Interaktion mit Objekten (Türen, Flasche), Hasen-Controller (springt zum Sprechen nach vorne und zurück an seinen Platz), 
       
-      - Animation: Szene 1 (Boxer wird abtransportiert), Szene 1.5 (Schwatzwutz ruft zur Rede), Szene 2 (Rede über Boxers Tod), hüpfender Brunnen --> alles inklusive Sounddateien, implementiert über "Timeline"
+      - Animation: Szene 1 (Boxer wird abtransportiert), Szene 2.1 (Schwatzwutz ruft zur Rede), Szene 2.2 (Rede über Boxers Tod), hüpfender Brunnen --> alles inklusive Sounddateien, implementiert über "Timeline"
       fallende Whiskeykisten, Wolkenbewegung
       
       - Development: Icon und Splash-Image von Pc- und Android-Version, Erstellung der ausführbaren Dateien (exe-Datei und Android-App), Einstellung der verschiedenen Settings
