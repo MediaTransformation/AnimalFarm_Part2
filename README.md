@@ -2,7 +2,7 @@
 
 
 In diesem Repository befindet sich das Virtual Reality Projekt "Animal Farm", welches im Rahmen des Kurses "Media Transformation" über die Dauer von zwei Semestern (Winter- und Sommersemester 2017/18)  an der Universität zu Köln erarbeitet wurde. Der Stand des vorangegangenen Semesters wurde kontinuierlich erweitert und die bestehenden Funktionen ausgebaut und neue Elemente implementiert.
-Während der Fokus des vorigen Semesters auf der Modellierung der diegetischen Welt gerichtet war, lag das Hauptaugenmerk dieses Semesters auf der Animation sowie der Narration der Textgrundlage "Die Farm der Tiere" von George Orwell ausgeweitet. 
+Während der Fokus des vorigen Semesters auf der Modellierung der diegetischen Welt gerichtet war, lag das Hauptaugenmerk dieses Semesters auf der Animation sowie der Narration der Textgrundlage "Die Farm der Tiere" von George Orwell. 
 
 Der Spieler kann beim Rundgang auf dem Farmgelände mit vielen Objekten interagieren und wird dadurch interaktiv in die Geschichte eingeführt und eingebunden. Im Folgenden werden die, in den letzten zwei Semestern erarbeiteten, Funktionen der Virtual Reality Anwendung kurz dargelegt und erläutert.
 
@@ -17,7 +17,7 @@ Animationen: Die meisten der Animationen in Animal Farm wurden einzeln erstellt 
 
 Szene 1: Die erste animierte Szene umfasst die Eingangsszene des neunten Kapitels von "Die Farm der Tiere". Diese wird getriggert, wenn der Spieler durch Anklicken eine Medizinflasche im Stall aufhebt und diese Boxer (Pferd im Stall) übergibt. Nachdem der Spieler die Flasche übergeben hat, wird die animierte Szene abgespielt und er kann nicht ins Geschehen eingreifen, sondern verbleibt für den Moment in einer Zuschauerrolle.
 
-Szene 2: Die zweite animierte Szene gibt den zweiten Teil des neunten Kapitels wider und besteht aus zwei Timelines. Die Erste wird im Anschluss an einen Tag/Nacht-Wechsel getriggert und ist die Einleitung zur eigentlichen Szene, die jedoch erst abgespielt wird, wenn der Spieler einen bestimmten Bereich in unmittelbarer Nähe des geschehens betritt. 
+Szene 2: Die zweite animierte Szene gibt den zweiten Teil des neunten Kapitels wieder und besteht aus zwei Timelines. Die Erste wird im Anschluss an einen Tag/Nacht-Wechsel getriggert und ist die Einleitung zur eigentlichen Szene, die jedoch erst abgespielt wird, wenn der Spieler einen bestimmten Bereich in unmittelbarer Nähe des geschehens betritt. 
 
 Beide Szenen sind dazu da, um dem Spieler den gewählten Ausschnitt der Geschichte George Orwells zugänglich und erfahrbar zu machen.
 
