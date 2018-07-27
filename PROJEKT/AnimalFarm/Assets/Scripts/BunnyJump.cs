@@ -2,41 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Sprung des Hasens vor den Spieler.
+/// </summary>
 public class BunnyJump : MonoBehaviour
 {
-
-    public BunnyNew bunny;
+    //Deklaration der wichtigsten Variablen. Hervorzuheben ist hier, dass nur static-Variablen von anderen Scripten genutzt werden können. 
+    //Public-Variablen sind im Unity-Inspector sichtbar, private-Variablen nicht. 
     public bool jump;
-    public float height = 8.5f;
-
     public GameObject Player;
 
-    // Use this for initialization
+    //Initalisierung der erforderlichen Variablen.
+    //Wichtig hier ist vor allem die Initialisierung der Variablen Player. Das Gameobject mit dem zugewiesenen Tag "Player" wird im gesamten Projekt gesucht.
+    //Damit ist sichergestellt, dass immer der richtige Player gefunden wird. 
     void Start()
     {
-        Player = GameObject.Find("Player");
-        speech();
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //Hier wird der Hase zum Spieler gedreht und erhält eine neue Position, die sich an der des Spielers orientiert. Um einen Abstand zu gewinnen, wird zur x-und y-Position noch ein Wert addiert.
+        //Dies ist eine abgewandelte Form des bereits vorhandenen Scripts "BunnyNew". 
 
         this.transform.LookAt(Player.transform);
-        //this.transform.Rotate (new Vector3 (0, 0, 0));
         this.transform.Rotate(new Vector3(0, 180, 0));
         this.transform.eulerAngles = new Vector3(-90, this.transform.eulerAngles.y, this.transform.eulerAngles.z);
 
         Vector3 newPos = (this.transform.position - Player.transform.position).normalized + Player.transform.position;
         this.transform.position = new Vector3(newPos.x + 2, newPos.y + 1, newPos.z);
 
-    }
-
-    void speech()
-    {
-        if (!SceneTrigger.boxerGone)
-        {
-            print("Look, Boxer's sick");
-        }
     }
 }

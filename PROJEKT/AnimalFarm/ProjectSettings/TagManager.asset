@@ -9,6 +9,7 @@ TagManager:
   - Enter
   - Exit
   - SceneCollider
+  - Flasche
   layers:
   - Default
   - TransparentFX
