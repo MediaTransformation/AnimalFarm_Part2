@@ -13,6 +13,8 @@ Schilder: Die Schilder die auf dem Famrgelände, meist vor Gebäuden, stehen geb
 
 Gebäude: Die Gebäude können betreten werden, die Türen sind animiert und öffnen/schließen sich beim Klicken auf diese.
 
+Animationen: Die meisten der Animationen in Animal Farm wurden mit der Timeline erstellt und über Scripte gesteuert. 
+
 Szene 1: Die erste animierte Szene umschließt den ersten Teil des neunten Kapitels von "Die Farm der Tiere". Diese wird getriggert, wenn der Spieler eine Medizinflasche im Stall aufhebt (durch klicken) und diese Boxer (Pferd im Stall) übergibt. Nachdem der Spieler die Flasche übergeben hat wird die animierte Szene abgespielt und er kann nicht ins Geschehen eingreifen, er ist nur Zuschauer in diesem Moment.
 
 Szene 2: Die zweite animierte Szene umschließt den zweiten Teil des neunten Kapitels. Diese wird nach Ablauf einer bestimmten Zeit nach Ende der ersten Szene getriggert. Beide Szenen sind dazu da, um dem Spieler einen gewählten Ausschnitt der Geschichte George Orwells zugänglich und erfahrbar zu machen.
@@ -23,6 +25,8 @@ Easteregg: Bei ersten Tests zur Animation und gekoppelten Tonsequenzen wurde der
 
 Farbschema: Die Farben in denen die VR Anwendung gehalten ist basieren auf einem eigens erstellten Farbschema, welches sich an Propagandaplakaten vergangener Zeiten orientiert. Die Hauptfarben sind rot, schwarz und beige/weiß.
 
+Plattformen: Animal Farm kann entweder als Pc-Version oder Android-App gestartet werden. Beide Dateien befinden sich im Projektordner. Die exe-Datei liegt im Ordner "AnimalFarmGame" und kann über einen Doppelklick aufgerufen werden. Gespielt wird entweder mit den Richtungstasten oder WASD, sowie der Maus. 
+Die Android-apk befindet sich im Ordner "AnimalFarmAndroid". Für die Bewegung auf der Animal Farm wird ein Controller vorausgesetzt. Aktionen werden mit der Taste 0 ausgelöst. Auf einem PS4-Controller ist das die Taste "X", auf einem Bluetooth- oder XBox-Controller ist die Tastenbelegung nachzulesen. 
 
 Unser Hauptziel war es, unseren eigenen Stil zu verwirklichen und dafür alles selber zu modellieren, zu gestalten und zu animieren um somit so wenig wie möglich auf schon bestehende Assets zurück greifen zu müssen und eine in sich stimmende virtuelle Welt zu erschaffen. Dafür hat jedes Gruppenmitglied seinen Beitrag in verschiedenen Bereichen geleistet, es folgt eine kurze Auflistung der Aufgabenbereiche der einzelnen Gruppenmitglieder, um einen Überblick über unsere Gruppenarbeit in den letzten zwei Semestern zu verschaffen.
 
@@ -31,19 +35,21 @@ Vera:
       - Modelle: Scheune, Farmhaus, Stall, Steinwagen, Abdeckerwagen
       
       - Programmierung (Allgemein): 
-      Custom-MouseLook für Windows-Version, Custom-Spieler-Bewegung (Bewegung in Blickrichtung),  Player-Controller (Objekt nach Plattform),
+      Custom-MouseLook für Windows-Version, Custom-Spieler-Bewegung (Bewegung in Blickrichtung),  Player-Controller (Player nach Plattform),
       einmaliger Tag/Nacht-Wechsel, Beenden der Pc-Version durch ESC-Taste
       
       - Programmierung (Szene): 
       Audiosequenz durch Anklicken (Schilder, Boxer, Hase), Szenen-Trigger (Szene1, Szene 1.5 und 2, hüpfender Brunnen), 
-      Interaktion mit Objekten (Türen, Flasche), Hasen-Controller (springt zum Sprechen nach vorne und zurück an seinen Platz)
+      Interaktion mit Objekten (Türen, Flasche), Hasen-Controller (springt zum Sprechen nach vorne und zurück an seinen Platz), 
       
       - Animation: Szene 1 (Boxer wird abtransportiert), Szene 1.5 (Schwatzwutz ruft zur Rede), Szene 2 (Rede über Boxers Tod), hüpfender Brunnen --> alles inklusive Sounddateien, implementiert über "Timeline"
       fallende Whiskeykisten, Wolkenbewegung
       
-      - Development: Icon und Splash-Image von Pc- und Android-Version, Erstellung der ausführbaren Dateien (exe-Datei und Android-App)
+      - Development: Icon und Splash-Image von Pc- und Android-Version, Erstellung der ausführbaren Dateien (exe-Datei und Android-App), Einstellung der verschiedenen Settings
       
       - Sonstiges:  Erstellung des Terrains, externe Asset-Implementierung (VR-Komponenten, Schlachter, zusätzliche Tiere, Brunnen, Heu, Zaun), Custom-Player (Position Kamera, Bewegungsmöglichkeit, "Körper") 
+      
+      - Kommentieren der Scripte
 
 Anja: 
 
