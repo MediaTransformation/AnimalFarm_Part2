@@ -1,5 +1,6 @@
 # AnimalFarm_Part2
 
+Gruppenmitglieder: Vera Malieske, Anja Wodzinski, Viviane Linne
 
 In diesem Repository befindet sich das Virtual Reality Projekt "Animal Farm", welches im Rahmen des Kurses "Media Transformation" über die Dauer von zwei Semestern (Winter- und Sommersemester 2017/18)  an der Universität zu Köln erarbeitet wurde. Der Stand des vorangegangenen Semesters wurde kontinuierlich erweitert und die bestehenden Funktionen ausgebaut und neue Elemente implementiert.
 Während der Fokus des vorigen Semesters auf der Modellierung der diegetischen Welt gerichtet war, lag das Hauptaugenmerk dieses Semesters auf der Animation sowie der Narration der Textgrundlage "Die Farm der Tiere" von George Orwell. 
